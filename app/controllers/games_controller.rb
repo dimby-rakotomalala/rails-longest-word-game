@@ -25,7 +25,7 @@ class GamesController < ApplicationController
       @score = 'Your score : 0. Try again!'
     elsif @answer.chars.all? { |letter| @answer.count(letter) <= @grid.count(letter) }
       @result = "Congratulations! #{@answer} is a valid English word!"
-      @score = "Your score : #{@answer.length}"
+      @score = "Your score : #{@answer.length}/8"
     else
       @result = "Sorry but #{@answer} can't be built out of #{params['grid']}"
       @score = 'Your score : 0. Try again!'
