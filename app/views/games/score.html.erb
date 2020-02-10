@@ -1,0 +1,22 @@
+<div class="row mt-5">
+  <div class="col-12">
+    <h1>Welcome to the longest word-game!</h1>
+  </div>
+</div>
+<div class="row mt-1">
+  <div class="col-12">
+    <ul id="grid">
+      <% @grid.each do |letter| %>
+        <li class="btn btn-primary"><%= letter %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-6">
+    <p>*****************************************************</p>
+    <p><b>Your word: <%= @answer %></b></p>
+    <h2>Result</h2>
+    <p><%= @result %></p>
+  </div>
+</div>
